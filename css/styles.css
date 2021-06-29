@@ -42,10 +42,13 @@ ul{
     height: 2rem;
     position: fixed;
 }
+
 .fixed p span{
     font-weight: 700;
 }
+
 .fixed p{
+   
     margin-right: 2rem;
 }
 .fixed i{
@@ -68,18 +71,11 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 header .logo{
-    position: relative;
-}
-header .logo::before{
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    top: center ;
-    left:-40px;
-    top:-10px;
-    background: url(https://pbs.twimg.com/profile_images/3678175880/74c8e55ecea73eb738c482d5403c6bb2.jpeg);
+    background: url("../img/logo.jpeg");
+    width: 50px;
+    height: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +85,6 @@ header nav ul{
     display: flex;
     align-items: center;
 }
-
 header nav ul li{
     margin-right: 1.125rem;
 }
@@ -112,6 +107,7 @@ main{
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
 }
+
 main div h1,
 main div p{
     margin-bottom: 1.125rem;
@@ -135,29 +131,36 @@ h1{
 .card div,
 .card iframe{
     height: 400px;
+    transition: box-shadow 200ms ease, top 800ms ease;
+    position: relative;
 }
+
 .card div{
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
+
+.card div:hover,
+.card iframe:hover{
+    box-shadow: 0px 0px 20px 15px #e4e4e4;;
+    top: -0.5rem;
+}
+
 .card .canijo{
-    background-image:url(https://vegabajadigital.com/wp-content/uploads/BRIOGRAFIA.png);
+    background-image:url("../img/canijo.jpg");
 }
 .card .tomasito{
-    background-image:url(http://www.elvolcanmusica.com/wp-content/uploads/2016/12/b4684591-2070-4ba6-ac3d-5f9b4b75dee51.jpg);
+    background-image:url("../img/tomasito2.jpg");
 }
 .card .lichis{
-    background-image:url(https://amp.diariodenavarra.es/uploads/imagenes/8col/2014/10/14/_lichis_aca5bfa2.jpg?8469b3c33197fb3d5a80d0c89a30f6c6);
+    background-image:url("../img/lichis.jpg");
 }
 .card .albert{
-    background-image:url(https://media.e-noticies.com//img/20131017/plaaaaaa.jpg);
+    background-image:url("../img/albertPla.jpg");
 }
 .card .muchachito{
-    background-image:url(https://uh.gsstatic.es/sfAttachPlugin/485299.jpg);
-}
-
-.card:hover{
-
+    background-image:url("../img/muchachito.jpg");
 }
 
