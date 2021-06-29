@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <title>La Pandilla Voladora</title>
@@ -14,12 +17,6 @@
     <!-- FIXED -->
     <div class="fixed">
         <p><span>La Pandilla Voladora</span>, la rumba rock se baja los pantalones. Más info sobre los conciertos mas disparatados del verano</p>
-        <div>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-spotify"></i></a>
-        </div>
     </div>
     <!-- HEADER -->
     <header>
@@ -38,45 +35,75 @@
 
     <!-- MAIN -->
     <main>
-        <div>
-            <h1>La Pandilla Voladora</h1>
-            <p class="description">
-                Una aventura de Albert Plá, Muchachito, Lichis, Tomasito y El Canijo de Jerez. Sin rival en su género.
-                Golfos, vividores, gamberros y bailongos. Sí, todo eso y más, pero La Pandilla Voladora agotó las localidades para el “concierto” en el cielo de Madrid <a href="">Mas</a>
-            </p>
-        </div>
-        <div></div>
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/-WHb-sqxvYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3><a href="">La Pandilla Voladora</a></h3>
-            <a href="">Ver como se juntaron</a>
-        </div>
-        <div class="card">
-            <div class="canijo"></div>
-            <h3><a href="">El Canijo</a></h3>
-            <p><a href="">Ver Los Delinqüentes</a></p>
-        </div>
-        <div class="card">
-            <div class="tomasito"></div>
-            <h3><a href="">Tomasito</a></h3>
-            <p><a href="">Ver biografia</a></p>
-        </div>
-        <div class="card">
-            <div class="lichis"></div>
-            <h3><a href="">Lichis</a></h3>
-            <p><a href="">Ver La Cabra Mecanica</a></p>
-        </div>
-        <div class="card">
-            <div class="albert"></div>
-            <h3><a href="">Albert Pla </a></h3>
-            <p><a href="">Ver biografia</a></p>
-        </div>
-        <div class="card">
-            <div class="muchachito"></div>
-            <h3><a href="">Jairo</a></h3>
-            <p><a href="">Ver Muchachito Bombo Infierno</a></p>
+        <div class="grid">
+            <div class="title">
+                <h1>La Pandilla Voladora</h1>
+                <p>
+                    Una aventura de Albert Plá, Muchachito, Lichis, Tomasito y El Canijo de Jerez. Sin rival en su género.
+                    Golfos, vividores, gamberros y bailongos. Sí, todo eso y más, pero La Pandilla Voladora agotó las localidades para el “concierto” en el cielo de Madrid <a href="">Mas</a>
+                </p>
+            </div>
+            <div></div>
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/-WHb-sqxvYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3><a href="">La Pandilla Voladora</a></h3>
+                <a href="">Ver como se juntaron</a>
+            </div>
+            <div class="card">
+                <div class="canijo"></div>
+                <h3><a href="">El Canijo</a></h3>
+                <p><a href="">Ver Los Delinqüentes</a></p>
+            </div>
+            <div class="card">
+                <div class="tomasito"></div>
+                <h3><a href="">Tomasito</a></h3>
+                <p><a href="">Ver biografia</a></p>
+            </div>
+            <div class="card">
+                <div class="lichis"></div>
+                <h3><a href="">Lichis</a></h3>
+                <p><a href="">Ver La Cabra Mecanica</a></p>
+            </div>
+            <div class="card">
+                <div class="albert"></div>
+                <h3><a href="">Albert Pla </a></h3>
+                <p><a href="">Ver biografia</a></p>
+            </div>
+            <div class="card">
+                <div class="muchachito"></div>
+                <h3><a href="">Jairo</a></h3>
+                <p><a href="">Ver Muchachito Bombo Infierno</a></p>
+            </div>
         </div>
 
+        <div class="form">
+            <h2>Únase a nuestro boletín para conocer el trabajo reciente y las ideas</h2>
+            <form>
+                <input type="text" id="email" placeholder="Correo electronico">
+                <button>Enviar</button>
+            </form>
+        </div>
     </main>
+
+    <footer>
+        <div class="socials">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-spotify"></i></a>
+        </div>
+        <p class="legacy">Legal© Jimena Hernando 2021</p>
+    </footer>
+
+    <footer>
+
+    </footer>
+
+    <script>
+       const email = document.querySelector('#email');
+       email.addEventListener('click', () =>{
+           email.style.borderColor = '#000';
+       }); 
+    </script>
 </body>
 </html>

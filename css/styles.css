@@ -11,6 +11,7 @@
 :root{
     --primary: #000;
     --secondary: #fff;
+    --third: #969696;
     --font-size: 13px;
     --font-family: Helveticaneue, sans-serif;
 }
@@ -102,18 +103,24 @@ button:hover{
 }
 
 /* MAIN */
-main{
+main .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
 }
 
-main div h1,
-main div p{
+main .grid .title h1,
+main .grid .title p{
     margin-bottom: 1.125rem;
 }
-h1{
+
+.title h1{
     font-size: 50px;
+}
+
+.title p{
+    font-size: 26px;
+    line-height: 1.35em;
 }
 
 .card{
@@ -164,3 +171,27 @@ h1{
     background-image:url("../img/muchachito.jpg");
 }
 
+.form{
+    padding: 5rem 3.75rem;
+    text-align: center;
+}
+
+.form form{
+    margin-top: 2rem;
+}
+
+.form form input{
+    width: 25%;
+    border: none;
+    border-bottom: 1px solid var(--third);
+    padding-bottom: 0.25rem;
+    margin-right: 1.5rem;
+}
+.form form input:focus{
+    outline: 0;
+}
+
+.socials{
+    display: flex;
+
+}
